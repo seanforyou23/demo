@@ -7,12 +7,25 @@
 
 <div class="text-center">
   <h2>Double click the input in the component below</h2>
-  <pfng-block-copy
-    style="margin: 0 auto;width:200px;display:block;"
-    [buttonAriaLabel]="'Copy to clipboard'"
-    [expandToggleAriaLabel]="'Toggle expand button for copy clipboard'"
-    [label]="'Copy text to clipboard'"
-    [tooltipText]="'Patternfly Accessibility Guidelines URL'"
-    [width]="'200px'"
-    [value]="'https://pf-next.com/accessibility-guide'"></pfng-block-copy>
+
 </div>
+
+<tabset class="center border">
+  <tab heading="one" (select)="tabSelected($event)">
+    <pfng-block-copy
+      class="center"
+      [buttonAriaLabel]="'Copy to clipboard'"
+      [expandToggleAriaLabel]="'Toggle expand button for copy clipboard'"
+      [label]="'Copy text to clipboard'"
+      [tooltipText]="'Patternfly Accessibility Guidelines URL'"
+      [width]="'200px'"
+      [value]="'https://pf-next.com/accessibility-guide'"></pfng-block-copy>
+  </tab>
+  <tab heading="two" (select)="tabSelected($event)">
+    <textarea class="center">Second tab content</textarea>
+  </tab>
+  <tab heading="three" (select)="tabSelected($event)">
+    <textarea class="center">Third tab content</textarea>
+  </tab>
+</tabset>
+

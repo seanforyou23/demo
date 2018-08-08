@@ -23,6 +23,7 @@
     "bootstrap": "^3.3.7",
     "core-js": "^2.5.4",
     "jquery": "^3.3.1",
+    "ngx-bootstrap": "^3.0.1",
     "patternfly": "^3.54.1",
     "patternfly-ng": "file:../seanforyou23-patternfly-ng/dist/patternfly-ng-0.0.0-semantically-released.tgz",
     "rxjs": "^6.0.0",

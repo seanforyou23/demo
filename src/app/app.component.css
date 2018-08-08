@@ -1,0 +1,9 @@
+.border {
+  border: 1px solid black;
+}
+
+.center {
+  margin: 0 auto;
+  width: 50%;
+  display: block;
+}
